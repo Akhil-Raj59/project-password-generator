@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#212121] flex justify-center items-center h-[100vh] flex-wrap"
+    >
+    <div class="flex flex-col justify-center items-center gap-8 text-center p-8  border-2 shadow-lg shadow-white text-white rounded-md m-3 box-border"
+        >
+        <h1 class="text-4xl"
+            >Password Generator
+        </h1>
+
+        <input type="text" id="answerBox" name="password" placeholder="Click on Generate button" class="p-2 text-2xl rounded-md w-[28.75rem] shadow-md shadow-white" 
+        >
+
+        <div class="buttons flex gap-2 w-full justify-center">
+            <button id="generateb" class="bg-purple-500 rounded-md text-2xl px-6 py-2 font-semibold"
+                >
+                    Generate
+            </button>
+            <button id="copyb" class="bg-purple-500 rounded-md text-2xl px-6 py-2 font-semibold"
+                >
+                    Copy To Clipboard
+            </button>   
+        </div>
+        <div class="input-section w-full text-xl font-medium flex flex-col gap-2 "
+            >
+            <div class="sub1 flex justify-between items-center"
+                >
+                <label for="password_length"
+                    >Password Length
+                </label>
+                <input type="number" min="0" name="password_length" id="password_length" class="w-[100px] border-2 text-2xl font-semibold border-white border-l-0 shadow-md bg-[#212121] rounded-md pr-3 pl-1 shadow-white"
+                >
+            </div>
+            <div class="sub2 flex justify-between items-end"
+                >
+                <label for="uppercase"
+                    >Include Uppercase Letters
+                </label>
+                <input type="checkbox" id="uppercase" name="uppercase" class="accent-blue-600"
+                >
+            </div>
+            <div class="sub3 flex justify-between items-end "
+                >
+                <label for="Lowercase"
+                    >Include Lowercase Letters
+                </label>
+                <input type="checkbox" id="Lowercase" name="Lowercase" class="accent-blue-600"
+                >
+            </div>
+            <div class="sub4 flex justify-between items-end"
+                >
+                <label for="numbers"
+                    >Include Numbers
+                </label>
+                <input type="checkbox" id="numbers" name="numbers" class="accent-blue-600"
+                >
+            </div>
+            <div class="sub5 flex justify-between items-end"
+                >
+                <label for="symbols"
+                    >Include Symbols
+                </label>
+                <input type="checkbox" id="symbols" name="symbols" class="accent-blue-600"
+                >
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
